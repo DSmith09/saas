@@ -12,6 +12,9 @@ end
 # Use Bootstrap Library for Styling
 gem 'bootstrap-sass', '3.3.5'
 
+# Use Font Awesome for Font Styling and Icons
+gem 'font-awesome-sass', '4.4.0'
+
 #Use postgresql as the database for production 
 group :production do
   gem 'pg'
