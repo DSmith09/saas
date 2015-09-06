@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
      ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
     '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
     |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
@@ -23,7 +21,7 @@ The Cloud9 IDE team
 
 Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
 To watch some training videos, visit http://www.youtube.com/user/c9ide
-=======
+
+
 # saas
 Software as a Service Application
->>>>>>> ef9fd794a51b4c21d5f5207eb8a42a2ba670638e
