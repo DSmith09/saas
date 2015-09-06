@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
+  
+  #Path to Contacts DB Table
+  resources :contacts
+  
+  #Path to About Us Page
   get '/about' => 'pages#about'
-
+  
+  #Path to Root/index page
   root 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
