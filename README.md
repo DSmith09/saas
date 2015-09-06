@@ -23,5 +23,5 @@ Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE.
 To watch some training videos, visit http://www.youtube.com/user/c9ide
 
 
-# saas
-Software as a Service Application
+# Software As A Service Application
+This is a Subscription-based Web Application designed to integrate a community of developers with investors/entreprenuers looking to start a business 
