@@ -27,6 +27,8 @@
     <div class="collaspe navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
         <!-- Links to the About Us Page -->
+        <!-- Make sure route is defined in Routes.rb file -->
+        <!-- You can check available routes with command: rake routes -->
         <li><%= link_to "About", about_path %></li>
       </ul>
     </div><!-- /.navbar collapse -->
@@ -34,8 +36,12 @@
   </div>
 </nav>
 
+<!-- Class Containter -- Belongs to Twitter Bootstrap -->
+<!-- yield Ruby element is everything that is output to the body of the application for a particular page -->
+<div class="container">
+  <%= yield %>
+</div>
 
-<%= yield %>
 
 </body>
 </html>
