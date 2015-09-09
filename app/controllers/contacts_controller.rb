@@ -11,6 +11,12 @@ class ContactsController < ApplicationController
         
         #If Data is submitted/saved on contacts page, re-open the contacts/new page
         if @contact.save
+            name = params[:contact][:name]
+            email = params[:contact][:email]
+            body = params[:contact][:body]
+            
+            ContactMailer.contact_email(name, email, body).deliver
+            
             flash[:success] = "Message sent."
             redirect_to new_contact_path 
             #This occurs only if the page fails
