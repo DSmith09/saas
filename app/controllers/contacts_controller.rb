@@ -1,7 +1,7 @@
 class ContactsController < ApplicationController
     
-    #This declares the variables used in the View for the contacts/new page
-    #The object Contact is defined in the Contact Model
+    #This instantiates a new Contact object and saves it in a variable
+    #The Contact object is saved in the contact.rb file
     def new
        @contact = Contact.new 
     end
