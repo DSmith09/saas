@@ -45,6 +45,11 @@
 <!-- Class Containter -- Belongs to Twitter Bootstrap -->
 <!-- yield Ruby element is everything that is output to the body of the application for a particular page -->
 <div class="container">
+  <!-- Flash Hash used to display message -->
+  <!-- From Bootstrap Library -->
+  <% flash.each do |key, value| %>
+  <%= content_tag :div, value, class: "alert alert-#{key}" %>
+  <% end %>
   <%= yield %>
 </div>
 
