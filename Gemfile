@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.1'
+gem 'rails', '4.1.0'
 
 # Use sqlite3 as the database for Active Record
 group :test, :development do
@@ -13,7 +13,7 @@ end
 gem 'bootstrap-sass', '3.3.1'
 
 # Use Font Awesome for Font Styling and Icons
-gem 'font-awesome-sass', '4.4.0'
+gem 'font-awesome-sass', '4.2.0'
 
 #Use postgresql as the database for production 
 group :production do
@@ -22,11 +22,11 @@ group :production do
 end
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '5.0'
+gem 'sass-rails', '4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '4.1.0'
+gem 'coffee-rails', '4.0.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -58,4 +58,6 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
+  gem 'devise', '3.4.1'
 
