@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  devise_for :users
   #Access using command: bundle exec rake routes 
   #Path to Contacts DB Table/ Contains paths to all contacts pages
   resources :contacts
