@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
          
   #Associates a User with a Plan
   belongs_to :plan
+  has_one :profile
   
   attr_accessor :stripe_card_token
   
