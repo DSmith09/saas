@@ -2,6 +2,12 @@ Rails.application.routes.draw do
   
   devise_for :users, controllers: { registrations: 'users/registrations' }
   #Access using command: bundle exec rake routes 
+  
+  #Path to User -> Profile Synchronization
+  resources :users do
+    resource :profile
+  end
+  
   #Path to Contacts DB Table/ Contains paths to all contacts pages
   resources :contacts
   
