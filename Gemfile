@@ -68,3 +68,5 @@ end
   # Use Figaro to hide secret keys
   gem 'figaro', '1.0.0'
 
+  # Use Paperclip for image uploading
+  gem 'paperclip', '4.3.1'
