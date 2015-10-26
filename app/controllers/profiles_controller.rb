@@ -2,11 +2,12 @@ class ProfilesController < ApplicationController
     def new
         # Form where a user can fill out their OWN profile
         @user = User.find(params[:user_id])
-        @profile = @user.build_profile
+        @profile = Profile.new
     end
     
     def create
         @user = User.find(params[:user_id])
+        #Associates a User with a Profile Object
         @profile = @user.build_profile(profile_params)
         if @profile.save
             flash[:success] = "Profile Updated!"
