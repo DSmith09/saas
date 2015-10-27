@@ -33,7 +33,7 @@
     <div class="collaspe navbar-collapse" id="main-nav-collapse">
       <div class="nav navbar-nav navbar-right">
         <!-- Checks if user is logged in -->
-        <% if current_user %>
+        <% if user_signed_in? %>
           <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: 'btn btn-primary navbar-btn' %>
         <% else %>
           <%= link_to "Sign In", new_user_session_path, class: 'btn btn-primary navbar-btn', method: :get %>
@@ -43,6 +43,11 @@
         <!-- Links to the About Us Page -->
         <!-- Make sure route is defined in Routes.rb file -->
         <!-- You can check available routes with command: rake routes -->
+        <% if user_signed_in? %>
+          <li><%= link_to "My Account", edit_user_registration_path %></li>
+          <li><%= link_to "Community", users_path %></li>
+        <% end %>
+        
         <li><%= link_to "About", about_path %></li>
         
         <li><%= link_to "Contact Us", new_contact_path %></li>
